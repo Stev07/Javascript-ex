@@ -10,10 +10,32 @@
 // You will have time to focus on it later.
 
 (function() {
-    // to get the value of an input: document.getElementById("element-id").value
-
+    
     var performOperation = function(operation) {
-        // perform the operation
+        let nb1 = parseInt(document.querySelector('#op-one').value);
+        let nb2 = parseInt(document.querySelector('#op-two').value);
+        let result;
+        
+        switch(operation){
+            case "addition" :
+            result=(nb1+nb2);
+            break;
+
+            case "substraction" :
+            result=(nb1-nb2);
+            break;
+
+            case "multiplication" :
+            result=(nb1*nb2);
+            break;
+
+            case "division" :
+            result=(nb1/nb2);
+            break;
+        }
+
+        alert(result)
+        
     };
 
     Array.from(document.querySelectorAll("button.operator")).forEach(function($btn) {
