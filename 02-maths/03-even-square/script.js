@@ -12,8 +12,17 @@
 (function() {
 
     document.getElementById("run").addEventListener("click", function() {
-
-        // your code here
+        let temp=0;
+        let tempArray=[];
+        for (let i=1 ; i<21 ; i++)
+        {
+            if (i%2==0){
+                temp+=Math.pow(i, 2);
+                tempArray.push(temp);
+                temp=0;
+            }
+        }
+        alert(tempArray);
 
     });
 
