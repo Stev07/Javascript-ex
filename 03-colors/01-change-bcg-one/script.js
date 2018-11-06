@@ -11,6 +11,25 @@
 
 (function() {
 
-    // your code here
+    const btn1 = document.querySelector('#red') ;
+    const btn2 = document.querySelector('#green') ;
+    const btn3 = document.querySelector('#yellow') ;
+    const btn4 = document.querySelector('#blue') ;
+
+    btn1.addEventListener('click', ()=>{
+        btn1.style.backgroundColor = "red";
+    })
+
+    btn2.addEventListener('click', ()=>{
+        btn2.style.backgroundColor = "green";
+    })
+
+    btn3.addEventListener('click', ()=>{
+        btn3.style.backgroundColor = "yellow";
+    })
+
+    btn4.addEventListener('click', ()=>{
+        btn4.style.backgroundColor = "blue";
+    })
 
 })();
