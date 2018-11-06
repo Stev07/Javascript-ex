@@ -14,9 +14,15 @@
     // to get the value of an input: document.getElementById("element-id").value
 
     document.getElementById("run").addEventListener("click", function() {
+        let num = document.querySelector('#number').value;
+        
+        let fact = 1;
 
-        // your code here
+        for (i=num; i>1; i--){
+            fact *= i;
+        }
 
+        alert(`La factorielle de ${num} est ${fact}`)
     });
 
 })();
