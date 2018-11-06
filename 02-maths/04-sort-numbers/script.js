@@ -10,12 +10,11 @@
 // You will have time to focus on it later.
 
 (function() {
-
-    // to get the value of an input: document.getElementById("element-id").value
-
     document.getElementById("run").addEventListener("click", function() {
+        var temp = document.getElementById("numbers").value.replace(/, /g," ");
+        temp = temp.split(" ");
 
-        // your code here
+        alert(temp.sort((a,b)=>(a-b)));
 
     });
 
