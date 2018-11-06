@@ -11,6 +11,15 @@
 
 (function() {
 
-    // your code here
+    let color = document.querySelector('#color').value;
+    const run = document.querySelector('#run');
+    const html = document.querySelector('html');
+
+
+    if (color !== ''){
+        run.addEventListener('click', ()=>{ 
+            html.style.backgroundColor = color;
+        })
+    }
 
 })();
