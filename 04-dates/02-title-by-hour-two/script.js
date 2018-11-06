@@ -17,7 +17,7 @@
     let content = document.querySelector("#target");
     
 
-    if (hour < 17.3) {
+    if (time < 17.3) {
     content = content.innerHTML ='Bonjour';
     }
         else{
