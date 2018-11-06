@@ -13,7 +13,7 @@
 
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
 
-    let hour = (new Date()).getHours();
+    let hour = (new Date()).getHours().getMinutes();
     let content = document.querySelector("#target");
 
     
@@ -22,7 +22,7 @@
     content = content.innerHTML ='Bonjour';
     }
         else{
-            content = 'Bonsoir'
+            content = content.innerHTML = 'Bonsoir';
         }
 
     
