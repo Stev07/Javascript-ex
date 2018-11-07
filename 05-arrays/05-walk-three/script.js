@@ -39,6 +39,10 @@
         },
     ];
 
-    // your code here
+    document.querySelector('#run').addEventListener('click', ()=>{
+        people.map((x)=>{
+            console.log(x.firstname);
+        })
+    })
 
 })();
