@@ -26,6 +26,6 @@
         "cerise",
     ];
 
-    // your code here
+    document.querySelector('#run').addEventListener('click', ()=>{alert(fruits[3])});
 
 })();
