@@ -89,6 +89,23 @@
         },
     ];
 
-    // your code here
+
+    function firstName(first) {
+        return first.firstname === 'Jean';
+      }
+
+    function lastName(last) {
+        return last.lastname === 'Dupont';
+      }
+    
+    
+    const person = people.find(firstName, lastName);
+
+    const index = people.indexOf(person);
+
+    document.querySelector('#run').addEventListener('click', ()=>{
+        console.log(person.email);
+        console.log(index);
+    })
 
 })();
