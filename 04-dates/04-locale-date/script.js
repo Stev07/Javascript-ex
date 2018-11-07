@@ -88,6 +88,14 @@
             break;         
     }
 
+
+// EN PLUS COURT ...
+    // let date = new Date();
+    // let options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    // console.log(
+    // Nous sommes le ${date.toLocaleTimeString("fr-FR", options)});
+
+
     document.querySelector('#target').innerHTML = `Nous sommes ${day} ${date} ${month} ${year}, ${hour}h${min}`;
 
 })();
