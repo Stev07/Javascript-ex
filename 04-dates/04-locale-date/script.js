@@ -11,8 +11,83 @@
 
 (function() {
 
-    // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
+    let today = new Date();
+    let date = today.getDate();
+    let day = today.getDay();
+    let month = today.getMonth()+1;
+    let year = today.getFullYear();
+    let hour = today.getHours();
+    let min = today.getMinutes();
+    const monthName = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
-    // your code here
+
+
+// TRANSFORMATION DU MOIS EN LETTRES
+    switch (month) {
+        case 1:
+            month = monthName[0];
+            break;
+        case 2:
+            month = monthName[1];
+            break;
+        case 3:
+            month = monthName[2];
+            break;
+        case 4:
+            month = monthName[3];
+            break;
+        case 5:
+            month = monthName[4];
+            break;
+        case 6:
+            month = monthName[5];
+            break;
+        case 7:
+            month = monthName[6];
+            break;
+        case 8:
+            month = monthName[7];
+            break;
+        case 9:
+            month = monthName[8];
+            break;
+        case 10:
+            month = monthName[9];
+            break;
+        case 11:
+            month = monthName[10];
+            break;
+        case 12:
+            month = monthName[11];
+    }
+
+
+// TRANSFORMATION JOUR EN LETTRES
+
+    switch (day) {
+        case 1:
+            day = "lundi";
+            break;
+        case 2:
+            day = "mardi";
+            break;   
+        case 3:
+            day = "mercredi";
+            break;
+        case 4:
+            day = "jeudi";
+            break;
+        case 5:
+            day = "vendredi";
+            break;
+        case 6:
+            day = "samedi";
+            break;
+        case 7:
+            day = "dimanche";
+            break;         
+    }
+
+    document.querySelector('#target').innerHTML = `Nous sommes ${day} ${date} ${month} ${year}, ${hour}h${min}`;
 
 })();
