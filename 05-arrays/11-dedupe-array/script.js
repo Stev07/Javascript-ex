@@ -28,6 +28,13 @@
         "cerise",
     ];
 
-    // your code here
+
+    document.querySelector('#run').addEventListener('click', ()=>{
+ 
+        var newArr = [ ...new Set(fruits) ];
+        console.log(newArr);
+
+
+    })
 
 })();
