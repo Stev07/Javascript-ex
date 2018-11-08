@@ -89,6 +89,10 @@
         },
     ];
 
-    // your code here
+
+    document.querySelector('#run').addEventListener('click', ()=>{
+        console.log(people.reduce((a, b) => ({age: a.age + b.age})));
+    })
+
 
 })();
