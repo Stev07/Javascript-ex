@@ -11,26 +11,37 @@
 
 (function() {
 
-    const btn1 = document.querySelector('#red') ;
-    const btn2 = document.querySelector('#green') ;
-    const btn3 = document.querySelector('#yellow') ;
-    const btn4 = document.querySelector('#blue') ;
-    const html = document.querySelector ("html");
+    // const btn1 = document.querySelector('#red') ;
+    // const btn2 = document.querySelector('#green') ;
+    // const btn3 = document.querySelector('#yellow') ;
+    // const btn4 = document.querySelector('#blue') ;
+    // const html = document.querySelector ("html");
 
-    btn1.addEventListener('click', ()=>{
-        html.style.backgroundColor = "red";
-    })
+    // btn1.addEventListener('click', ()=>{
+    //     html.style.backgroundColor = "red";
+    // })
 
-    btn2.addEventListener('click', ()=>{
-        html.style.backgroundColor = "green";
-    })
+    // btn2.addEventListener('click', ()=>{
+    //     html.style.backgroundColor = "green";
+    // })
 
-    btn3.addEventListener('click', ()=>{
-        html.style.backgroundColor = "yellow";
-    })
+    // btn3.addEventListener('click', ()=>{
+    //     html.style.backgroundColor = "yellow";
+    // })
 
-    btn4.addEventListener('click', ()=>{
-        html.style.backgroundColor = "blue";
+    // btn4.addEventListener('click', ()=>{
+    //     html.style.backgroundColor = "blue";
+    // })
+
+    let btn = document.querySelectorAll('button');
+   
+    btn.forEach((item)=>{
+         item.addEventListener('click', ()=>{
+            let temp = item.getAttribute('id');
+            document.documentElement.style.backgroundColor = temp;
     })
+       
+    });
+
 
 })();
