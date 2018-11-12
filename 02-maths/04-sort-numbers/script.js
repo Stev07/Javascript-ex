@@ -11,7 +11,7 @@
 
 (function() {
     document.getElementById("run").addEventListener("click", function() {
-        var temp = document.getElementById("numbers").value.replace(/, /g," ");
+        let temp = document.getElementById("numbers").value.replace(/, /g," ");
         temp = temp.split(" ");
 
         alert(temp.sort((a,b)=>(a-b)));
