@@ -36,7 +36,8 @@
 
 
     document.querySelector('#next').addEventListener('click', ()=>{
-        index == 4? index = 0 : index++
+        index == 4? index = 0 : index++;
+        document.querySelector('img').src = gallery[index];
     })
 
         
