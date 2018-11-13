@@ -10,11 +10,18 @@
 // You will have time to focus on it later.
 
 (function() {
-
     
     const target = document.querySelectorAll('.target');
-    for (var i=0; i<target.length; i++){
-        target[i].innerHTML="OWNED";
-    }
+
+    // for (var i=0; i<target.length; i++){
+    //     target[i].innerHTML="OWNED";
+    // }
+
+
+
+    // OU
+    const i = x.innerHTML;
+    
+    target.forEach((x)=>{x.innerHTML != "OWNED"? x.innerHTML = "OWNED" : x.innerHTML = "OWNED";})
 
 })();
