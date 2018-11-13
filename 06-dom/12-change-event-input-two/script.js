@@ -15,19 +15,23 @@
 
 
     input.addEventListener('input', ()=>{
-        let inputOk = document.querySelector('span#validity.indicator').innerHTML;
-        let inputArray = Array.from(input.value);
+        const inputArray = Array.from(input.value);
         let compteur = 0;
         
         for (let i = 0; i<inputArray.length; i++){
             isNaN(inputArray[i])? compteur+=0: compteur++ ;
         }
 
-        if (inputArray.length>7 && compteur>1){
-            document.querySelector('span#validity.indicator').innerHTML = "OK";
-        }else{
+        // if (inputArray.length>7 && compteur>1){
+        //     document.querySelector('span#validity.indicator').innerHTML = "OK";
+        // }else{
+        //     document.querySelector('span#validity.indicator').innerHTML = "Pas ok";
+        // }
+
+        inputArray.length>7 && compteur>1?
+            document.querySelector('span#validity.indicator').innerHTML = "OK" :
             document.querySelector('span#validity.indicator').innerHTML = "Pas ok";
-        }
+
         });
 
 
