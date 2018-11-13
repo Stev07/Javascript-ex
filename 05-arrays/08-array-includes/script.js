@@ -27,8 +27,7 @@
     ];
 
     document.querySelector('#run').addEventListener('click', ()=>{
-        const resultat = fruits.some( fruit => fruit === 'pomme');
-        console.log(resultat);
+        console.log(fruits.some( fruit => fruit === 'pomme'));
         })
 
 
