@@ -11,19 +11,9 @@
 
 (function() {
 
-    // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
-
-    let hour = (new Date()).getHours().getMinutes();
+    let hour = new Date();
     let content = document.querySelector("#target");
 
-    
-
-    if (hour < 18) {
-    content = content.innerHTML ='Bonjour';
-    }
-        else{
-            content = content.innerHTML = 'Bonsoir';
-        }
-
+    hour > 18 ? content.innerHTML ='Bonjour': content.innerHTML = 'Bonsoir';
     
 })();
