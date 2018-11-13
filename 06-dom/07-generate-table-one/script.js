@@ -32,12 +32,11 @@
     // generateTable();
 
 
-    function createTable() {
-        let rows;
+    const createTable = () => {
         let table = document.createElement("table");
       
         for (i=1; i <= 10; i++) {
-          rows = table.insertRow();
+          let rows = table.insertRow();
           rows.insertCell().textContent = "Row "+ i ;   
         }
         document.querySelector('#target').appendChild(table);
