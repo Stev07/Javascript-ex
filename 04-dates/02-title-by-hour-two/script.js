@@ -16,13 +16,14 @@
     let time = `${hour}.${minutes}`;
     let content = document.querySelector("#target");
     
+    time < 17.3 ? content.innerHTML ='Bonjour': content.innerHTML = 'Bonsoir';
 
-    if (time < 17.3) {
-    content = content.innerHTML ='Bonjour';
-    }
-        else{
-            content = content.innerHTML ='Bonsoir'
-        }
+    // if (time < 17.3) {
+    // content = content.innerHTML ='Bonjour';
+    // }
+    //     else{
+    //         content = content.innerHTML ='Bonsoir'
+    //     }
 
 
 })();
