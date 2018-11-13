@@ -11,11 +11,10 @@
 
 (function() {
 
-    function createTable() {
+    const createTable = () => {
         let rows;
-        let table = document.createElement("table");
+        const table = document.createElement("table");
       
-
         for (let i=0; i < 10; i++) {
           rows = table.insertRow();
 
@@ -23,6 +22,7 @@
             rows.insertCell().textContent = (i+1)*(y+1);
           }
         }
+
         document.querySelector('#target').appendChild(table);
       }
 
