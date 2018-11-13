@@ -22,14 +22,23 @@
 
     let index = 0;
 
+    // document.querySelector('#next').addEventListener('click', ()=>{
+    //     if(index==4){
+    //         index=0;
+    //     } else{
+    //         index++;
+    //     }
+    //     document.querySelector('img').src = gallery[index];
+    // });
+
+
+    // OU
+
+
     document.querySelector('#next').addEventListener('click', ()=>{
-        if(index==4){
-            index=0;
-        } else{
-            index++;
-        }
-        document.querySelector('img').src = gallery[index];
-    });
+        index == 4? index = 0 : index++
+    })
+
         
 
 })();
