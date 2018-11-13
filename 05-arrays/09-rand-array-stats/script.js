@@ -11,19 +11,40 @@
 
 (function() {
 
-    document.querySelector('#run').addEventListener('click', ()=>{
+    // document.querySelector('#run').addEventListener('click', ()=>{
         
-        function nombreRandom(max) {
-            return Math.floor(Math.random() * Math.floor(max));
-          }
+    //     const nombreRandom = (max) => {
+    //         return Math.floor(Math.random() * Math.floor(max));
+    //       }
 
+    //       let arr = [];
+    //       let casesARemplir = document.querySelectorAll('td');
+    //       let casesARemplirArr = Array.prototype.slice.call(casesARemplir);
+
+    //       for (let i = 0; i < casesARemplirArr.length; i++) {       
+    //         let temp = nombreRandom(101);
+    //         arr.push(temp);
+    //         casesARemplirArr[i].innerHTML = temp;
+    //       }
+
+    //       document.querySelector("#min").innerHTML = Math.min(... arr);
+    //       document.querySelector("#max").innerHTML = Math.max(... arr);
+
+    //       const reducer = (accumulator, currentValue) => accumulator + currentValue;
+    //       let somme = arr.reduce(reducer);
+    //       document.querySelector("#sum").innerHTML = somme;
+    //       document.querySelector("#average").innerHTML = somme/arr.length ;
+
+    //     })
+
+
+        document.querySelector('#run').addEventListener('click', ()=>{
 
           let arr = [];
-          let casesARemplir = document.querySelectorAll('td');
-          let casesARemplirArr = Array.prototype.slice.call(casesARemplir);
+          let casesARemplirArr = [...document.querySelectorAll('td')]
 
           for (let i = 0; i < casesARemplirArr.length; i++) {       
-            let temp = nombreRandom(101);
+            let temp = Math.floor(Math.random() * Math.floor(101));
             arr.push(temp);
             casesARemplirArr[i].innerHTML = temp;
           }
@@ -32,12 +53,9 @@
           document.querySelector("#max").innerHTML = Math.max(... arr);
 
           const reducer = (accumulator, currentValue) => accumulator + currentValue;
-          let somme = arr.reduce(reducer);
-          document.querySelector("#sum").innerHTML = somme;
-          document.querySelector("#average").innerHTML = somme/arr.length ;
-
-
-
+          document.querySelector("#sum").innerHTML = arr.reduce(reducer);                   //SOMME
+          document.querySelector("#average").innerHTML = (arr.reduce(reducer))/arr.length ; //MOYENNE
         })
 
 })();
+
