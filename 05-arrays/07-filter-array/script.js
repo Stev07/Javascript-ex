@@ -92,8 +92,7 @@
 
 
     document.querySelector('#run').addEventListener('click', ()=>{
-        let newArr = people.filter(people => people.age > 18);
-        console.log(newArr);
+        console.log(people.filter(people => people.age > 18));
     })
 
 })();
