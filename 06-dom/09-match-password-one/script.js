@@ -14,14 +14,18 @@
     const mdp = document.querySelector('#pass-one');
     const mdp2 =document.querySelector('#pass-two');
 
-    document.querySelector('#run').mdpConfirm.addEventListener('click', ()=>{
-        if (mdp.value!=mdp2.value){
-            mdp.style.border = "1px solid red";
-            mdp2.style.border = "1px solid red";
-        } else{
-            mdp.style.border = "1px solid green";
-            mdp2.style.border = "1px solid green";
-        }
+    // document.querySelector('#run').addEventListener('click', ()=>{
+    //     if (mdp.value!=mdp2.value){
+    //         mdp.style.border = "1px solid red";
+    //         mdp2.style.border = "1px solid red";
+    //     } else{
+    //         mdp.style.border = "1px solid green";
+    //         mdp2.style.border = "1px solid green";
+    //     }
+    // })
+
+    document.querySelector('#run').addEventListener('click', ()=>{
+        mdp.value!=mdp2.value ? (mdp.style.border = "1px solid red", mdp2.style.border = "1px solid red") : (mdp.style.border = "1px solid green", mdp2.style.border = "1px solid green");
     })
 
 })();
