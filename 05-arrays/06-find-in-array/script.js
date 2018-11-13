@@ -90,22 +90,29 @@
     ];
 
 
-    function firstName(first) {
-        return first.firstname === 'Jean';
-      }
-
-    function lastName(last) {
-        return last.lastname === 'Dupont';
-      }
-    
-    
-    const person = people.find(firstName, lastName);
-
-    const index = people.indexOf(person);
-
     document.querySelector('#run').addEventListener('click', ()=>{
-        console.log(person.email);
-        console.log(index);
+        // const firstName = (x) => {
+        //     return x.firstname === 'Jean';}
+    
+        // const lastName = (x) => {
+        //     return x.lastname === 'Dupont';}
+        
+        // const person = people.find(firstName, lastName);
+        // console.log(person)
+    
+        // const index = people.indexOf(person);
+        
+        // console.log(person.email);
+        // console.log(index);
+
+
+        const jeanJean = people.find( person => person.firstname === 'Jean' && person.lastname === 'Dupont' )
+        
+        console.log(jeanJean.email)
+        console.log(people.indexOf(jeanJean))
+
+        
+
     })
 
 })();
