@@ -19,8 +19,7 @@
 
 
 
-    // OU
-    const i = x.innerHTML;
+    // OU;
     
     target.forEach((x)=>{x.innerHTML != "OWNED"? x.innerHTML = "OWNED" : x.innerHTML = "OWNED";})
 
