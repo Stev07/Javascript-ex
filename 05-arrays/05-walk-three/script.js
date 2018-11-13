@@ -11,7 +11,7 @@
 
 (function() {
 
-    var people = [
+    let people = [
         {
             firstname: "Garald",
             lastname: "Freschi",
@@ -40,9 +40,7 @@
     ];
 
     document.querySelector('#run').addEventListener('click', ()=>{
-        people.map((x)=>{
-            console.log(x.firstname);
-        })
+        people.map((x)=>{console.log(x.firstname)})
     })
 
 })();
