@@ -10,11 +10,9 @@
 // You will have time to focus on it later.
 
 (function() {
-    const url = document.querySelector("#source").getAttribute("data-image");
     const img = new Image();
-    img.src = `${url}`;
+    img.src = document.querySelector("#source").getAttribute("data-image");
     document.querySelector('#target').appendChild(img);
-    
     document.querySelector('.material').removeChild(document.querySelector("#source"));
 
 })();
