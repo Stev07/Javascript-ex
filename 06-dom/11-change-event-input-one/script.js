@@ -17,8 +17,6 @@
    
    input.maxLength=10;
 
-    input.addEventListener('input', ()=>{
-        counter.innerHTML = input.value.length +"/10";
-        });
+   input.addEventListener('input', ()=>{ counter.innerHTML = input.value.length +"/10";});
 
 })();
