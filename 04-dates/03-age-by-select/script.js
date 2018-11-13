@@ -12,9 +12,9 @@
 (function() {
 
 
-    function calculAge(strDate) {
+    const calculAge = (strDate) => {
         strDate = strDate.split('/');
-        let birthMonth = strDate[1]-1,
+        const birthMonth = strDate[1]-1,
             birthDay = strDate[0],
             now = new Date(),
             nowMonth = now.getMonth(),
@@ -28,9 +28,9 @@
     }
 
     document.querySelector('#run').addEventListener('click', ()=>{
-        let day = document.querySelector("select#dob-day").value;
-        let month = document.querySelector("select#dob-month").value;
-        let year = document.querySelector("select#dob-year").value;
+        const day = document.querySelector("select#dob-day").value;
+        const month = document.querySelector("select#dob-month").value;
+        const year = document.querySelector("select#dob-year").value;
 
         alert(calculAge(`${day}/${month}/${year}`))
     } )
