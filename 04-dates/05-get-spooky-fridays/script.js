@@ -10,47 +10,65 @@
 // You will have time to focus on it later.
 
 (function() {
-    const run = document.querySelector('button#run');
-    let inputYear = document.querySelector('input#year').value;
-    let month;
     
-    let date = new Date("1/"+month+"/"+inputYear);
+   
 
-    for (let month = 2; month >13 ; month++){
-
-        
-    }
-
-    
-
-
+    document.querySelector('button#run').addEventListener('click', ()=>{
+        let inputYear = document.querySelector('input#year').value;
+        let month = 0;
+        let date = new Date(inputYear,month,13, 1);
+        let month13 = [];
+        const monthName = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"];
 
 
+        for (month; month < 12 ; month++){
+            date = new Date(inputYear, month,13, 1);
+            if (date.getDay() === 5){
 
 
+                switch (month) {
+                    case 0:
+                        month = monthName[0];
+                        break;
+                    case 1:
+                        month = monthName[1];
+                        break;
+                    case 2:
+                        month = monthName[2];
+                        break;
+                    case 3:
+                        month = monthName[3];
+                        break;
+                    case 4:
+                        month = monthName[4];
+                        break;
+                    case 5:
+                        month = monthName[5];
+                        break;
+                    case 6:
+                        month = monthName[6];
+                        break;
+                    case 7:
+                        month = monthName[7];
+                        break;
+                    case 8:
+                        month = monthName[8];
+                        break;
+                    case 9:
+                        month = monthName[9];
+                        break;
+                    case 10:
+                        month = monthName[10];
+                        break;
+                    case 11:
+                        month = monthName[11];
+                }
+                month13.push(month);
 
+            }
+        }
+        alert(month13);
+    })
 
-        
-    
-
-    // function vdd13(year){
-    //     let inputYear = document.querySelector('input#year').value;
-    //     let d = new Date();
-    //     let month;
-    //     let monthList = [];
-    
-    //     for(month=0;month<12;month++)
-    //     {
-         
-    //         if (d.getDay() == 5 && d.getDate() == 13)
-    //         {
-    //           monthList.push(month)
-    //         }
-    //     }
-    
-    //     return monthList;                            
-    // }
-
-    // run.addEventListener('click', ()=>{vdd13()});
 
 })();
