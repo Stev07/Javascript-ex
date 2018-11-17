@@ -1,4 +1,4 @@
-/* becode/javascript
+﻿/* becode/javascript
  *
  * /07-misc/06-guess-number/script.js - 7.6: jeu : trouver un nombre
  *
@@ -18,7 +18,7 @@
     alert("Devinez le nombre entre 1 et 100")
 
 
-    while (reponse !== true){
+    while (!reponse){
         let valeurATester = prompt ("Votre chiffre/nombre");
         if (valeurATester > randomNumber){
             alert("-")
